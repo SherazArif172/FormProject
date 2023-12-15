@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/input.css" />
+  </head>
+  <body>
+    <header>
+      <div class="p-6 bg-purple-800 text-white text-center">
+        <h1 class="font-bold font-sans text-5xl">Client Page</h1>
+        <p class="font-serif text-lg">
+          Enter the details of your incoming Clients
+        </p>
+      </div>
+    </header>
+    <section class="bg-white h-[100%] flex justify-center mt-7">
+      <div class="w-[500px] p-5 rounded-xl bg-purple-800">
+        <form id="Form">
+          <div class="pt-6">
+            <div class="bg-white w-[300px] h-[300px] mx-auto mb-9 rounded-3xl">
+              <img
+                src="./Assets/Images/pngwing.com.png"
+                class="w-52 mx-auto mb-6 pt-2 rounded-full"
+                alt=""
+                id="image"
+              />
+              <label
+                class="font-bold text-lg bg-red-600 rounded-md px-4 border-none text-white py-2 mx-[4.5rem] cursor-pointer hover:bg-red-500"
+                for="image-input"
+                >Upload Image</label
+              >
+
+              <input
+                type="file"
+                class="ml-10 mt-3 hidden"
+                accept="Image/jpeg Image/png Image/jpg"
+                id="image-input"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <input
+              type="text"
+              placeholder="Name"
+              class="outline-none mt-4 px-6 py-2 rounded-full"
+              id="name"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Address"
+              class="px-6 py-2 rounded-full outline-none mt-4"
+              id="adress"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="outline-none mt-4 px-6 py-2 rounded-full"
+              required
+              id="email"
+            />
+
+            <input
+              type="text"
+              placeholder="Skill"
+              class="px-6 py-2 rounded-full outline-none mt-4"
+              id="skill"
+              required
+            />
+          </div>
+
+          <div class="flex place-content-center">
+            <button
+              type="submit"
+              class="px-7 py-3 mt-12 rounded-3xl bg-red-700 font-bold text-lg text-white border-none hover:bg-red-500"
+              id="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="flex flex-col mb-6">
+      <h1
+        class="font-bold font-serif text-4xl text-white bg-purple-800 py-10 text-center mt-6 drop-shadow-[0_0_35px_black"
+      >
+        OutPut is Here
+      </h1>
+      <div class="flex justify-center">
+        <div class="w-[500px] p-5 rounded-xl bg-purple-800 mt-8">
+          <div class="p-5 self-center mt-5 rounded-xl">
+            <div class="pt-6">
+              <div
+                class="bg-white w-[300px] h-[300px] mx-auto mb-9 rounded-3xl"
+              >
+                <img
+                  src="./Assets/Images/pngwing.com.png"
+                  class="w-52 mx-auto mb-6 pt-2 rounded-full"
+                  alt=""
+                  id="outimage"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mb-8 py-7">
+            <div class="flex flex-col">
+              <input
+                type="text"
+                placeholder="Name"
+                class="outline-none mt-4 px-6 py-2 rounded-full"
+                id="outname"
+              />
+
+              <input
+                type="text"
+                placeholder="Adress"
+                class="px-6 py-2 rounded-full outline-none mt-4"
+                id="outadress"
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                class="outline-none mt-4 px-6 py-2 rounded-full"
+                id="outemail"
+              />
+
+              <input
+                type="text"
+                placeholder="Skill"
+                class="px-6 py-2 rounded-full outline-none mt-4"
+                id="outskill"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Assets/js/script.js"></script>
+  </body>
+</html>
